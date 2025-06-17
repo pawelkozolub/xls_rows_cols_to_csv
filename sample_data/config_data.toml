@@ -1,0 +1,27 @@
+# Config file for data selection (rows and columns)
+
+# Columns definition:
+# column_name (for data selection) = "case name (column name in CSV file)"
+[column_data]
+E = "Sample Case A"
+F = "Sample Case B"
+J = "Sample Case F"
+H = "Sample Case D"
+
+# Rows definition: 
+# tag = ["tab name", "row no (for data selection)", "name", "unit = source unit", conversion (multiplier, 1.0 if no conversion), "unit after conversion"
+[row_data]
+# Components
+comp1 = {tab="Sheet_B", row="3", name="Component-1", unit_src="%-share", conv=1.0, unit="%-share"}
+comp2 = {tab="Sheet_B", row="4", name="Component-2", unit_src="%-share", conv=1.0, unit="%-share"}
+comp3 = {tab="Sheet_B", row="5", name="Component-3", unit_src="%-share", conv=1.0, unit="%-share"}
+comp4 = {tab="Sheet_B", row="6", name="Component-4", unit_src="%-share", conv=1.0, unit="%-share"}
+# Totals
+total_pct = {tab="Sheet_B", row="9", name="Total in percentage", unit_src="%-share", conv=1.0, unit="%-share"}
+total_dec = {tab="Sheet_B", row="9", name="Total in decimal no", unit_src="%-share", conv=0.01, unit="-"}
+# Parameters
+param1 = {tab="Sheet_A", row="3", name="Param A1", unit_src="unit a1", conv=1.0, unit="unit a1"}
+param2 = {tab="Sheet_A", row="3", name="A1 converted to kilo", unit_src="unit a1", conv=0.001, unit="k(unit a1)"}
+param3 = {tab="Sheet_A", row="4", name="Param A2", unit_src="unit a2", conv=1.0, unit="unit a2"}
+param4 = {tab="Sheet_A", row="11", name="Param A9", unit_src="unit a9", conv=1.0, unit="unit a9"}
+param5 = {tab="Sheet_A", row="12", name="Param A10", unit_src="unit a10", conv=1.0, unit="unit a10"}
