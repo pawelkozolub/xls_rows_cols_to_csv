@@ -1,0 +1,7 @@
+# Config file for data selection (rows and columns)
+config_data = "sample_data/config_data.toml"
+
+# Input/output data directory (relative path, e.g. ../data) and file names
+data_dir = "sample_data"
+input_file = "workbook_1.xlsx"
+output_file = "results.csv"
